@@ -88,3 +88,37 @@ a {
     display: flex;
     flex-direction: column;
 }
+
+.flexRowWrap {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap
+}
+
+.chip {
+    font-family: 'Martian Mono';
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    color: var(--background-color);
+    padding: 2px;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.yellow {
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+}
+
+.blue {
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+.orange {
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+}

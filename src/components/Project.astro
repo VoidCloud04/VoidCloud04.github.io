@@ -4,11 +4,7 @@ const {projectName,projectDesc,projectLink,color} = Astro.props
 
 ---
 
-<div style=`border: 2px solid ${color}; align-items:center; justify-content:center; padding-bottom:0.5em;`>
-    <h4 style=`color:${color}`>{projectName}</h4>
-    <p>{projectDesc}</p>
-    <a id="projectLink" href=`${projectLink}`>Link To Site</a>
-</div>
+<p><a style=`color:${color}` href="${projectLink}">{projectName}</a> - "{projectDesc}"</p>
 
 <style>
     div {
