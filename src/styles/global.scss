@@ -1,0 +1,132 @@
+@use 'tokens' as *;
+
+// ============================================================================
+//  GLOBAL BASE STYLES
+// ============================================================================
+
+@font-face {
+	font-family: 'Martian Mono';
+	src: url('/Fonts/MartianMono-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('/Fonts/RobotoMono-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	color-scheme: dark;
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font-body);
+	font-size: 1rem;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+// --- Typography -------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-mono);
+	font-weight: 500;
+	line-height: 1.25;
+	letter-spacing: -0.01em;
+}
+
+a {
+	color: var(--teal);
+	text-decoration: none;
+	transition: color var(--speed) var(--ease);
+
+	&:hover {
+		color: var(--teal-hi);
+		text-decoration: underline;
+		text-underline-offset: 3px;
+	}
+}
+
+b,
+strong {
+	color: var(--sky);
+	font-weight: 600;
+}
+
+ul {
+	list-style: none;
+}
+
+:focus-visible {
+	outline: 2px solid var(--teal-hi);
+	outline-offset: 3px;
+	border-radius: 3px;
+}
+
+// --- Shared layout helpers --------------------------------------------------
+
+.shell {
+	width: 100%;
+	max-width: $page-max;
+	margin-inline: auto;
+	padding-inline: $gutter;
+}
+
+.page-main {
+	flex: 1 0 auto;
+	padding-block: clamp(1.75rem, 4vw, 3rem) clamp(3rem, 6vw, 4.5rem);
+}
+
+// Vertical rhythm between top-level sections on a page.
+.stack {
+	display: flex;
+	flex-direction: column;
+	gap: clamp(1.75rem, 3.5vw, 2.75rem);
+}
+
+// Two-column layout: main content + sidebar (collapses on small screens).
+.split {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 20.5rem;
+	gap: clamp(1.5rem, 3vw, 2.5rem);
+	align-items: start;
+
+	@media (max-width: $bp-lg) {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+// --- Reduced motion ---------------------------------------------------------
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		transition-duration: 0.01ms !important;
+	}
+}

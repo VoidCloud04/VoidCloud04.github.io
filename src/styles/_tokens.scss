@@ -1,0 +1,58 @@
+// ============================================================================
+//  DESIGN TOKENS
+//  Dark adaptation of the resume palette: navy base, teal accent.
+//  Change a value here and it propagates across the whole site.
+// ============================================================================
+
+// Breakpoints (Sass-only, used in media queries)
+$bp-lg: 1040px;
+$bp-md: 860px;
+$bp-sm: 560px;
+
+// Page rhythm
+$page-max: 1120px;
+$gutter: clamp(1rem, 4vw, 3rem);
+
+:root {
+	// --- Surfaces -----------------------------------------------------------
+	--bg: #0a1219;
+	--surface: #101b26;
+	--surface-alt: #15222f;
+	--surface-hi: #1b2c3a;
+
+	// --- Lines --------------------------------------------------------------
+	--rule: #223546;
+	--rule-soft: #1a2836;
+
+	// --- Text ---------------------------------------------------------------
+	--text: #e4ecf4;
+	--text-soft: #b9c8d7;
+	--text-muted: #8296a9;
+
+	// --- Accents ------------------------------------------------------------
+	--teal: #35b8ca;
+	--teal-hi: #61d6e6;
+	--teal-dim: #1b7f91;
+	--teal-ghost: rgba(53, 184, 202, 0.12);
+	--sky: #7bb8e8;
+
+	// --- Chips --------------------------------------------------------------
+	--chip-bg: #16283a;
+	--chip-br: #2a4459;
+	--chip-fg: #c6dced;
+
+	// --- Banner gradient (mirrors the resume header) ------------------------
+	--banner: linear-gradient(120deg, #071726 0%, #0e3252 55%, #14527c 100%);
+
+	// --- Type ---------------------------------------------------------------
+	--font-body: 'Inter Variable', 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+	--font-mono: 'Martian Mono', ui-monospace, 'Cascadia Mono', 'Roboto Mono', monospace;
+
+	// --- Motion & shape -----------------------------------------------------
+	--radius: 6px;
+	--radius-lg: 10px;
+	--ease: cubic-bezier(0.32, 0.72, 0.29, 1);
+	--speed: 180ms;
+
+	--shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.28);
+}

@@ -1,0 +1,19 @@
+node_modules
+.DS_Store
+
+# SvelteKit / Vite output
+.svelte-kit
+build
+dist
+.vite
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+*.log
+Thumbs.db
+
+README.md
