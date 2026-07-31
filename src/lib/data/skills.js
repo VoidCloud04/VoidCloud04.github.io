@@ -13,6 +13,7 @@ export const skillGroups = [
 		items: [
 			'Jira',
 			'Linux',
+			'Git',
 			'DNS / Networking',
 			'Tailscale',
 			'SnapRAID',
