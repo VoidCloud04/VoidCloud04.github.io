@@ -8,19 +8,19 @@
 //  Wrap key phrases in <b></b> inside `summary` and `points` for emphasis.
 // ============================================================================
 
-export const summary = `Senior Computer Science student and current <b>Toyota Motor North America</b> IT
-intern with six years of hands-on development experience spanning front-end web and 
-low-level systems work in C, C++ and ARM assembly. Experienced delivering inside an
-<b>Agile/Scrum</b> team — from requirements gathering with business stakeholders through implementation,
-testing and release.`;
+export const summary = `Senior Computer Science student and <b>Toyota Motor North America</b> IT
+intern with six years of hands-on development experience spanning <b>Svelte</b> and JavaScript
+front-end web development, browser-based games, a self-hosted Linux homelab, and research on
+web accessibility with large language models. Coursework includes low-level systems programming
+in C, C++ and ARM assembly. Experienced delivering inside an <b>Agile/Scrum</b> team — from
+requirements gathering with business stakeholders through implementation, testing and release.`;
 
 export const experience = [
 	{
 		role: 'OneTech Summer Intern',
 		org: 'Toyota Motor North America',
-		when: 'May 2026 – Present',
+		when: 'May 2026 – Aug 2026',
 		where: 'Plano, TX',
-		status: 'Current',
 		points: [
 			'<b>Redesigned internal legacy systems</b>, modernizing the user experience and adding flexibility for the teams that rely on them daily.',
 			'Partnered directly with business stakeholders to gather requirements and deliver <b>self-service solutions</b> for internal reference tools.',
@@ -86,6 +86,6 @@ export const interests = [
 ];
 
 // Short blurb used on the home page.
-export const intro = `I'm a computer science student at UNT and a software intern at Toyota North America.
+export const intro = `I'm a computer science student at UNT and a former software intern at Toyota North America.
 I spend my time on front-end web work with Svelte, low-level systems programming, and running the
 homelab that hosts everything I self-host.`;
