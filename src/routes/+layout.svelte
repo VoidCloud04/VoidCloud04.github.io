@@ -1,11 +1,10 @@
 <script>
-	import favicon from '#lib/assets/favicon.svg';
-
 	let { children } = $props();
+	import '#lib/styles/global.scss'
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" href="/VoidWish.png" />
 </svelte:head>
 
 {@render children()}
